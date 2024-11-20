@@ -1,23 +1,27 @@
 #include "My-List.h"
 #include "DList.h"
+#include <list>
+#include <string>
 
 int main()
 {
-    
-    DList<int> b;
-    b.showList();
+    std::list<std::string> p33;
+    p33.push_back("Yaroslav");
+    p33.push_back("Andriy");
+    p33.push_back("Stepan");
+    p33.push_back("Ivan");
+    p33.push_back("Kyrylo");
 
-    b.push_back(7);
-    b.push_back(4);
-    b.push_back(9);
-    b.push_back(3);
-    b.showList();
-    b.showReverseList();
-    cout << "-------------------\n";
-    DNode<int>* item = b.search(-4);
-    if (item == nullptr)
-        cout << "not found!\n";
-    else
-        item->show();
+    std::list<std::string>::iterator p;
+    for (p = p33.begin(); p != p33.end(); p++)
+    {
+        cout << *p << " ";
+    }cout << endl;
+
+    p33.sort(); 
+    for (auto item : p33) {
+        cout << item << " ";
+    }cout << endl;
+   
 }
 
