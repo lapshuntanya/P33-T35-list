@@ -51,6 +51,14 @@ int main()
     p = &fourth;
     while (p != nullptr) { cout << p->info; p = p->prev; } */
     
+    DList<int> b;
+    b.showList();
 
+    b.push_back(7);
+    b.push_back(4);
+    b.push_back(9);
+    b.push_back(3);
+    b.showList();
+    b.showReverseList();
 }
 
