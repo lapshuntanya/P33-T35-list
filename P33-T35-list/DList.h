@@ -51,4 +51,15 @@ public:
 			}
 		}
 	}
+
+	void showReverseList() {
+		if (head == nullptr) cout << "List is empty\n";
+		else {
+			Node<T>* p = current;
+			while (p != nullptr) {
+				p->show();
+				p = p->prev;
+			}
+		}
+	}
 };
