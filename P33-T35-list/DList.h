@@ -62,4 +62,16 @@ public:
 			}
 		}
 	}
+
+	DNode<T>* search(T value) {
+		//Знайти вузол з зазначеним value
+		//Якщо такого вузла немає, то повернути nullptr
+		DNode<int>* p = head;
+		while (p!= nullptr)
+		{
+			if (p->info == value) return p;
+			p = p->next;
+		}
+		return nullptr;
+	}
 };
