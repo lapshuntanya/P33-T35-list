@@ -44,7 +44,7 @@ public:
 	void showList() {
 		if (head == nullptr) cout << "List is empty\n";
 		else {
-			Node<T>* p = head;
+			DNode<T>* p = head;
 			while (p != nullptr) {
 				p->show();
 				p = p->next;
@@ -55,7 +55,7 @@ public:
 	void showReverseList() {
 		if (head == nullptr) cout << "List is empty\n";
 		else {
-			Node<T>* p = current;
+			DNode<T>* p = current;
 			while (p != nullptr) {
 				p->show();
 				p = p->prev;
