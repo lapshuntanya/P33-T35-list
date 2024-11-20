@@ -23,5 +23,8 @@
     <ClInclude Include="My-List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
