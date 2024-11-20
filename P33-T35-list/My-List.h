@@ -41,10 +41,13 @@ namespace MyList {
 		}
 
 		void showList() {
-			Node<T>* p = head;
-			while (p != nullptr) {
-				p->show();
-				p = p->next;
+			if (head == nullptr) cout << "List is empty\n";
+			else {
+				Node<T>* p = head;
+				while (p != nullptr) {
+					p->show();
+					p = p->next;
+				}
 			}
 		}
 	};
