@@ -39,5 +39,13 @@ namespace MyList {
 				current = el;//оновлення поточного вузла
 			}
 		}
+
+		void showList() {
+			Node<T>* p = head;
+			while (p != nullptr) {
+				p->show();
+				p = p->next;
+			}
+		}
 	};
 }
